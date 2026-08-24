@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agricultural Machinery & Implements Catalog | Robotrac RT Series</title>
+  <meta name="description" content="Explore smart compact tractors, rotavators, reversible ploughs, reapers, sprayers, and trailers manufactured by Robotrac Tractor India at MIDC Paithan." />
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚜</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Ticker -->
+  <div class="top-ticker">
+    <div class="container top-ticker-inner">
+      <div class="ticker-highlight">
+        <span class="ticker-badge"><i class="fa-solid fa-handshake"></i> Dealer Network Open</span>
+        <span>Accepting Dealership & Service Partner applications across Maharashtra, Gujarat, MP, and Karnataka.</span>
+      </div>
+      <div class="ticker-links">
+        <a href="tel:+919881510419"><i class="fa-solid fa-phone"></i> Hotline: +91 98815 10419</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <div class="nav-item"><a href="index.html" class="nav-link-item">Home</a></div>
+        <div class="nav-item"><a href="shop.html" class="nav-link-item active">Tractors & Shop</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link-item">Equipment & Rental</a></div>
+        <div class="nav-item"><a href="compare.html" class="nav-link-item">Compare Models</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link-item">About & Factory</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link-item">Agri Knowledge</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link-item">Contact Us</a></div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn search-trigger-btn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="nav-icon-btn cart-toggle-btn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count-badge" style="display:none;">0</span></button>
+        <a href="login.html" class="nav-icon-btn" aria-label="Farmer Login" title="Farmer Account"><i class="fa-solid fa-user"></i></a>
+        <button class="mobile-menu-toggle" id="mobileNavToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Breadcrumb Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <h1 class="page-hero-title">Agricultural Machinery & Implements Catalog</h1>
+      <div class="breadcrumb-list">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Shop & Catalog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Main Section -->
+  <section class="section-padding" style="background: var(--bg-cream);">
+    <div class="container">
+      <div class="shop-layout-grid">
+        <!-- Sidebar Filters -->
+        <aside class="shop-sidebar">
+          <!-- Live Keyword Filter -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-title">Search Catalog</h4>
+            <div class="form-group" style="margin-bottom:0;">
+              <input type="text" id="shopFilterSearch" class="form-control" placeholder="Search by name, HP, tool...">
+            </div>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-title">Categories</h4>
+            <div class="filter-categories-list" id="categoryFilterList">
+              <button class="filter-cat-btn active" data-cat="all">
+                <span>All Machinery & Implements</span>
+                <span class="filter-count" id="count-all">20</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="tractors">
+                <span>RT Series Tractors</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="soil-prep">
+                <span>Soil Preparation</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="planting-harvest">
+                <span>Sowing, Planting & Harvest</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="utility-transport">
+                <span>Transport & Utility</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="crop-care">
+                <span>Crop Care & Spraying</span>
+                <span class="filter-count">4</span>
+              </button>
+              <button class="filter-cat-btn" data-cat="specialized">
+                <span>Special Attachments</span>
+                <span class="filter-count">2</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Price Filter -->
+          <div class="sidebar-widget">
+            <h4 class="sidebar-title">Max Target Price</h4>
+            <div class="slider-field">
+              <div class="slider-head">
+                <span>Budget Up to:</span>
+                <strong id="priceDisplay">₹ 15.00 Lakh</strong>
+              </div>
+              <input type="range" min="20000" max="1500000" step="20000" value="1500000" id="shopPriceRange" class="finance-range">
+              <div class="slider-ticks">
+                <span>₹20k</span>
+                <span>₹5L</span>
+                <span>₹10L</span>
+                <span>₹15L</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Factory Direct Benefit Box -->
+          <div style="background:var(--bg-cream); padding:16px; border-radius:var(--radius-md); border:1px solid var(--border-light);">
+            <h5 style="color:var(--primary-forest); margin-bottom:6px;"><i class="fa-solid fa-shield-halved"></i> Factory Direct Assurance</h5>
+            <p style="font-size:0.82rem; color:var(--text-muted); margin:0;">
+              All machinery comes with 2-year warranty provision, GST invoices, and pre-delivery inspection at MIDC Paithan.
+            </p>
+          </div>
+        </aside>
+
+        <!-- Main Product Results Area -->
+        <main class="shop-main-content">
+          <!-- Toolbar -->
+          <div class="shop-toolbar">
+            <div class="shop-results-count">
+              Showing <strong id="visibleCount">20</strong> agricultural products
+            </div>
+            <div class="shop-toolbar-right">
+              <label for="shopSortSelect" style="font-size:0.88rem; font-weight:600;">Sort By:</label>
+              <select id="shopSortSelect" class="sort-select">
+                <option value="featured">Featured / Recommended</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Products Grid -->
+          <div class="products-grid" id="shopProductsGrid">
+            <!-- Dynamically populated by JS -->
+          </div>
+
+          <!-- Empty State Box (hidden by default) -->
+          <div id="shopEmptyState" class="empty-cart-state" style="display:none; background:#ffffff; border-radius:var(--radius-xl); border:1px solid var(--border-light);">
+            <div class="empty-cart-icon"><i class="fa-solid fa-wheat-awn-circle-exclamation"></i></div>
+            <h4>No machinery matching your filter criteria</h4>
+            <p>Try resetting the search keyword or increasing the price filter slider.</p>
+            <button class="btn btn-primary" id="resetFiltersBtn">Reset All Filters</button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+          <span>ROBO<span class="brand-highlight">TRAC</span></span>
+        </a>
+        <p>Smart Compact Tractors & Precision Agricultural Machinery. Designed and manufactured at MIDC Paithan, Maharashtra.</p>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="shop.html"><i class="fa-solid fa-chevron-right"></i> All Products</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Equipment Rental</a></li>
+          <li><a href="compare.html"><i class="fa-solid fa-chevron-right"></i> Tractor Comparison</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Customer Care</h4>
+        <ul class="footer-links-list">
+          <li><a href="contact.html?type=test-drive"><i class="fa-solid fa-chevron-right"></i> Book Test Drive</a></li>
+          <li><a href="contact.html?type=dealership"><i class="fa-solid fa-chevron-right"></i> Dealer Enquiries</a></li>
+          <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Subsidy Guide 2026</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> Factory Tour</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Factory Address</h4>
+        <p style="font-size:0.9rem;">MIDC Paithan, Maharashtra 431148<br>Phone: +91 98815 10419<br>Email: ceo@robotrac.co.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Robotrac Tractor India Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><i class="fa-solid fa-tractor"></i> Machinery Cart</h3>
+      <button class="cart-close-btn" id="cartCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter"></div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="site-modal" id="quickViewModal">
+    <div class="modal-content-wrap">
+      <button class="modal-close-btn" id="quickViewClose"><i class="fa-solid fa-xmark"></i></button>
+      <div id="quickViewBody"></div>
+    </div>
+  </div>
+
+  <!-- Search Modal -->
+  <div class="site-modal" id="searchModal">
+    <div class="modal-content-wrap search-modal-content">
+      <button class="modal-close-btn" id="searchModalClose"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="color:var(--primary-forest); margin-bottom:16px;">Search Robotrac Machinery</h3>
+      <div class="search-input-wrap">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="siteSearchInput" class="site-search-input" placeholder="Search tractor model, rotavator, plough...">
+      </div>
+      <div class="search-results-box" id="searchResultsBox"></div>
+    </div>
+  </div>
+
+  <!-- Mobile Off-Canvas Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-menu" id="mobileNavMenu">
+    <div class="mobile-nav-head">
+      <a href="index.html" class="brand-logo" style="font-size:1.4rem;">
+        <div class="logo-leaf-icon" style="width:30px;height:30px;font-size:0.9rem;"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+      <button class="mobile-nav-close" id="mobileNavClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop.html" class="mobile-nav-link active">Tractors & Shop</a>
+      <a href="services.html" class="mobile-nav-link">Equipment Rental</a>
+      <a href="compare.html" class="mobile-nav-link">Compare Models</a>
+      <a href="about.html" class="mobile-nav-link">About & Factory</a>
+      <a href="blog.html" class="mobile-nav-link">Agri Knowledge</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Bar -->
+  <nav class="mobile-bottom-bar">
+    <div class="mobile-bottom-nav">
+      <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="shop.html" class="bottom-nav-item active"><i class="fa-solid fa-tractor"></i><span>Tractors</span></a>
+      <a href="index.html#customizerSection" class="bottom-nav-item highlight-fab"><i class="fa-solid fa-wand-magic-sparkles"></i><span>EMI</span></a>
+      <a href="cart.html" class="bottom-nav-item cart-toggle-btn"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+      <a href="tel:+919881510419" class="bottom-nav-item"><i class="fa-solid fa-phone-volume"></i><span>Call</span></a>
+    </div>
+  </nav>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Shop Page Filtering Logic
+    document.addEventListener("DOMContentLoaded", () => {
+      const grid = document.getElementById("shopProductsGrid");
+      const emptyState = document.getElementById("shopEmptyState");
+      const searchInput = document.getElementById("shopFilterSearch");
+      const priceRange = document.getElementById("shopPriceRange");
+      const priceDisplay = document.getElementById("priceDisplay");
+      const sortSelect = document.getElementById("shopSortSelect");
+      const visibleCountEl = document.getElementById("visibleCount");
+      const resetBtn = document.getElementById("resetFiltersBtn");
+      const catButtons = document.querySelectorAll(".filter-cat-btn");
+
+      // Check URL query parameters
+      const urlParams = new URLSearchParams(window.location.search);
+      let activeCategory = urlParams.get("category") || "all";
+      let isWishlistView = urlParams.get("view") === "wishlist";
+
+      // Highlight matching category button
+      catButtons.forEach(btn => {
+        if (btn.getAttribute("data-cat") === activeCategory) {
+          catButtons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+        }
+      });
+
+      function renderShop() {
+        const query = (searchInput.value || "").toLowerCase().trim();
+        const maxPrice = parseInt(priceRange.value, 10);
+        const sortBy = sortSelect.value;
+        const wishlist = window.cartManager ? window.cartManager.getWishlist() : [];
+
+        let filtered = PRODUCTS_DATA.filter(p => {
+          // Wishlist filter mode
+          if (isWishlistView) {
+            return wishlist.includes(p.id);
+          }
+
+          // Category
+          if (activeCategory !== "all" && p.category !== activeCategory && p.type !== activeCategory) {
+            return false;
+          }
+          // Max Price
+          if (p.price > maxPrice) {
+            return false;
+          }
+          // Search query
+          if (query) {
+            const matchName = p.name.toLowerCase().includes(query);
+            const matchDesc = p.shortDesc.toLowerCase().includes(query);
+            const matchHp = p.hp && p.hp.toLowerCase().includes(query);
+            if (!matchName && !matchDesc && !matchHp) return false;
+          }
+          return true;
+        });
+
+        // Sorting
+        if (sortBy === "price-asc") {
+          filtered.sort((a, b) => a.price - b.price);
+        } else if (sortBy === "price-desc") {
+          filtered.sort((a, b) => b.price - a.price);
+        } else if (sortBy === "rating") {
+          filtered.sort((a, b) => b.rating - a.rating);
+        }
+
+        visibleCountEl.textContent = filtered.length;
+
+        if (filtered.length === 0) {
+          grid.innerHTML = "";
+          emptyState.style.display = "block";
+          return;
+        }
+
+        emptyState.style.display = "none";
+        grid.innerHTML = filtered.map(p => generateProductCardHtml(p)).join("");
+      }
+
+      // Event listeners
+      searchInput.addEventListener("input", renderShop);
+      
+      priceRange.addEventListener("input", (e) => {
+        const val = parseInt(e.target.value, 10);
+        if (val >= 100000) {
+          priceDisplay.textContent = `₹ ${(val / 100000).toFixed(2)} Lakh`;
+        } else {
+          priceDisplay.textContent = `₹ ${val.toLocaleString("en-IN")}`;
+        }
+        renderShop();
+      });
+
+      sortSelect.addEventListener("change", renderShop);
+
+      catButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          catButtons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          activeCategory = btn.getAttribute("data-cat");
+          isWishlistView = false;
+          renderShop();
+        });
+      });
+
+      resetBtn.addEventListener("click", () => {
+        searchInput.value = "";
+        priceRange.value = 1500000;
+        priceDisplay.textContent = "₹ 15.00 Lakh";
+        activeCategory = "all";
+        isWishlistView = false;
+        catButtons.forEach(b => b.classList.toggle("active", b.getAttribute("data-cat") === "all"));
+        renderShop();
+      });
+
+      renderShop();
+    });
+  </script>
+</body>
+</html>

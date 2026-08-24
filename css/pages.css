@@ -1,0 +1,737 @@
+/* ==========================================================================
+   ROBOTRAC PAGE-SPECIFIC STYLING
+   Shop, Product Details, Services, Compare, About, Cart, Checkout, Blog, Contact
+   ========================================================================== */
+
+/* --- 1. SHOP & MACHINERY CATALOG PAGE --- */
+.shop-layout-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  align-items: flex-start;
+}
+
+.shop-sidebar {
+  background: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 26px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 100px;
+}
+
+.sidebar-widget {
+  margin-bottom: 28px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.sidebar-widget:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.sidebar-title {
+  font-size: 1.05rem;
+  color: var(--primary-forest);
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-categories-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filter-cat-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.filter-cat-btn:hover,
+.filter-cat-btn.active {
+  background: var(--bg-cream);
+  color: var(--primary-green);
+  font-weight: 700;
+  padding-left: 16px;
+}
+
+.filter-count {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  background: #f1f5f9;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.shop-toolbar {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.shop-results-count {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.shop-toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.sort-select {
+  padding: 8px 14px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.88rem;
+  background: #ffffff;
+}
+
+/* --- 2. SINGLE PRODUCT DETAILS PAGE --- */
+.product-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-bottom: 60px;
+}
+
+.detail-gallery-wrap {
+  position: sticky;
+  top: 100px;
+}
+
+.detail-main-img-box {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  height: 440px;
+  margin-bottom: 16px;
+}
+
+.detail-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-thumbs-row {
+  display: flex;
+  gap: 12px;
+}
+
+.detail-thumb-btn {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--border-light);
+  background: #ffffff;
+  padding: 0;
+  transition: all var(--transition-fast);
+}
+
+.detail-thumb-btn.active,
+.detail-thumb-btn:hover {
+  border-color: var(--primary-green);
+  box-shadow: var(--shadow-sm);
+}
+
+.detail-thumb-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.detail-meta-header {
+  margin-bottom: 20px;
+}
+
+.detail-brand-badge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--primary-leaf);
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.detail-title {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  color: var(--primary-forest);
+  margin-bottom: 12px;
+}
+
+.detail-price-strip {
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.detail-price {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary-forest);
+  font-family: var(--font-heading);
+}
+
+/* Product Tabs & Specs Table */
+.product-tabs-section {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  margin-bottom: 60px;
+}
+
+.p-tabs-nav {
+  display: flex;
+  gap: 12px;
+  border-bottom: 2px solid var(--border-light);
+  margin-bottom: 30px;
+  overflow-x: auto;
+}
+
+.p-tab-btn {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  padding: 12px 24px;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  transition: all var(--transition-fast);
+}
+
+.p-tab-btn.active,
+.p-tab-btn:hover {
+  color: var(--primary-forest);
+  border-bottom-color: var(--accent-amber);
+}
+
+.spec-table-styled {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.spec-table-styled tr:nth-child(even) {
+  background: var(--bg-cream);
+}
+
+.spec-table-styled th,
+.spec-table-styled td {
+  padding: 14px 20px;
+  border: 1px solid var(--border-light);
+  font-size: 0.92rem;
+  text-align: left;
+}
+
+.spec-table-styled th {
+  background: var(--primary-forest);
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+/* --- 3. SERVICES & EQUIPMENT RENTAL PAGE --- */
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.service-box-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.service-box-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-sprout);
+}
+
+.service-box-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: var(--bg-cream);
+  color: var(--primary-leaf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  transition: all var(--transition-normal);
+}
+
+.service-box-card:hover .service-box-icon {
+  background: var(--primary-forest);
+  color: var(--accent-amber);
+}
+
+.rental-booking-form-box {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-xl);
+}
+
+/* --- 4. TRACTOR COMPARE MATRIX PAGE --- */
+.compare-matrix-wrap {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 40px;
+}
+
+.compare-matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.compare-matrix-table th,
+.compare-matrix-table td {
+  padding: 18px 24px;
+  border: 1px solid var(--border-light);
+  text-align: center;
+}
+
+.compare-matrix-table th:first-child,
+.compare-matrix-table td:first-child {
+  text-align: left;
+  font-weight: 700;
+  background: var(--bg-cream);
+  width: 240px;
+}
+
+.compare-col-header {
+  padding: 24px 16px;
+}
+
+.compare-img {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  margin: 0 auto 12px auto;
+}
+
+.compare-title {
+  font-size: 1.1rem;
+  color: var(--primary-forest);
+  margin-bottom: 6px;
+}
+
+.compare-price {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--accent-warm);
+}
+
+/* --- 5. ABOUT US & FACTORY PAITHAN PAGE --- */
+.factory-showcase-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.factory-img-frame {
+  position: relative;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.factory-img-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.factory-badge-over {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(15, 28, 21, 0.92);
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--accent-amber);
+}
+
+.timeline-vertical {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-vertical::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 8px;
+  width: 2px;
+  height: 100%;
+  background: var(--primary-leaf);
+}
+
+.timeline-point-item {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.timeline-point-item::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-amber);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 2px var(--primary-leaf);
+}
+
+.timeline-year-tag {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--accent-warm);
+}
+
+/* --- 6. CART & CHECKOUT PAGES --- */
+.checkout-layout-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.checkout-box {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 6px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  background: var(--bg-cream);
+  transition: all var(--transition-fast);
+}
+
+.form-control:focus {
+  border-color: var(--primary-green);
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(27, 67, 50, 0.1);
+}
+
+.payment-method-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.payment-option-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  background: var(--bg-cream);
+  transition: all var(--transition-fast);
+}
+
+.payment-option-card.active,
+.payment-option-card:hover {
+  border-color: var(--primary-green);
+  background: #ffffff;
+}
+
+.payment-option-card input {
+  accent-color: var(--primary-green);
+  width: 18px;
+  height: 18px;
+}
+
+/* --- 7. BLOG & KNOWLEDGE HUB PAGES --- */
+.blog-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.blog-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-thumb-wrap {
+  height: 220px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.blog-card:hover .blog-thumb {
+  transform: scale(1.06);
+}
+
+.blog-category-badge {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  background: var(--primary-forest);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.blog-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-size: 1.2rem;
+  color: var(--primary-forest);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.blog-title a:hover {
+  color: var(--accent-amber);
+}
+
+.blog-read-more {
+  margin-top: auto;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--primary-leaf);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* --- 8. CONTACT & DEALERSHIP APPLICATION --- */
+.contact-layout-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.contact-tabs-box {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-tab-nav {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.c-tab-btn {
+  padding: 10px 18px;
+  border-radius: var(--radius-full);
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: all var(--transition-fast);
+}
+
+.c-tab-btn.active,
+.c-tab-btn:hover {
+  background: var(--primary-forest);
+  color: #ffffff;
+  border-color: var(--primary-forest);
+}
+
+.paithan-location-card {
+  background: linear-gradient(135deg, var(--primary-forest) 0%, #0d271c 100%);
+  color: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 36px;
+  box-shadow: var(--shadow-lg);
+}
+
+.paithan-location-card h3 {
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.paithan-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.paithan-info-item {
+  display: flex;
+  gap: 14px;
+  font-size: 0.95rem;
+}
+
+.paithan-info-item i {
+  color: var(--accent-amber);
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+/* FAQ Items */
+.faq-accordion-box {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: 40px;
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-light);
+  padding: 18px 0;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-item-header h4 {
+  font-size: 1.1rem;
+  color: var(--primary-forest);
+  margin: 0;
+}
+
+.faq-item-icon {
+  font-size: 1rem;
+  color: var(--primary-leaf);
+  transition: transform var(--transition-fast);
+}
+
+.faq-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.faq-item.active .faq-item-body {
+  max-height: 300px;
+  padding-top: 14px;
+}
+
+.faq-item.active .faq-item-icon {
+  transform: rotate(180deg);
+}

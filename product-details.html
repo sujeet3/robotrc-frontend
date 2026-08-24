@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details | Robotrac RT Series & Machinery</title>
+  <meta name="description" content="Detailed technical specifications, track-width options, implement compatibility and financing for Robotrac tractors and farm machinery." />
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚜</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Ticker -->
+  <div class="top-ticker">
+    <div class="container top-ticker-inner">
+      <div class="ticker-highlight">
+        <span class="ticker-badge"><i class="fa-solid fa-handshake"></i> Dealer Network Open</span>
+        <span>Accepting Dealership & Service Partner applications across Maharashtra, Gujarat, MP, and Karnataka.</span>
+      </div>
+      <div class="ticker-links">
+        <a href="tel:+919881510419"><i class="fa-solid fa-phone"></i> Hotline: +91 98815 10419</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <div class="nav-item"><a href="index.html" class="nav-link-item">Home</a></div>
+        <div class="nav-item"><a href="shop.html" class="nav-link-item active">Tractors & Shop</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link-item">Equipment & Rental</a></div>
+        <div class="nav-item"><a href="compare.html" class="nav-link-item">Compare Models</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link-item">About & Factory</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link-item">Agri Knowledge</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link-item">Contact Us</a></div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn search-trigger-btn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="nav-icon-btn cart-toggle-btn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count-badge" style="display:none;">0</span></button>
+        <a href="login.html" class="nav-icon-btn" aria-label="Farmer Login" title="Farmer Account"><i class="fa-solid fa-user"></i></a>
+        <button class="mobile-menu-toggle" id="mobileNavToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="page-hero-banner" style="padding: 40px 0 35px 0;">
+    <div class="container">
+      <div class="breadcrumb-list" id="detailBreadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a href="shop.html">Machinery Catalog</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span id="breadcrumbProductName">Product Details</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details Main Section -->
+  <section class="section-padding" style="background: var(--bg-cream);">
+    <div class="container">
+      <div id="productDetailRoot">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Tabbed Specifications & Farmer Reviews -->
+      <div class="product-tabs-section" id="productTabsRoot">
+        <div class="p-tabs-nav">
+          <button class="p-tab-btn active" data-tab="specsTab">Technical Specifications</button>
+          <button class="p-tab-btn" data-tab="featuresTab">Features & Field Utility</button>
+          <button class="p-tab-btn" data-tab="autonomyTab">Autonomy & Electronics</button>
+          <button class="p-tab-btn" data-tab="reviewsTab">Farmer Reviews & Ratings</button>
+        </div>
+
+        <!-- Tab 1: Specs -->
+        <div class="p-tab-content active" id="specsTab">
+          <h3 style="color:var(--primary-forest); margin-bottom:20px;">Comprehensive Technical Datasheet</h3>
+          <table class="spec-table-styled" id="detailSpecTable">
+            <!-- Populated dynamically -->
+          </table>
+          <p style="margin-top:20px; font-size:0.85rem; color:var(--text-muted);">
+            *Specifications subject to continuous engineering improvements. Target ex-showroom price includes built-in dealer margin and 2-year warranty provision.
+          </p>
+        </div>
+
+        <!-- Tab 2: Features -->
+        <div class="p-tab-content" id="featuresTab" style="display:none;">
+          <h3 style="color:var(--primary-forest); margin-bottom:16px;">Key Highlights & Field Benefits</h3>
+          <ul id="detailFeaturesList" style="display:flex; flex-direction:column; gap:12px; font-size:1rem;">
+            <!-- Populated dynamically -->
+          </ul>
+        </div>
+
+        <!-- Tab 3: Autonomy -->
+        <div class="p-tab-content" id="autonomyTab" style="display:none;">
+          <h3 style="color:var(--primary-forest); margin-bottom:16px;">Autonomy-Ready Architecture</h3>
+          <p style="font-size:1rem; line-height:1.7; color:var(--text-body); margin-bottom:20px;">
+            Every Robotrac tractor platform is built from day one with integrated wiring harnesses, CAN Bus 2.0B micro-controllers, and pre-machined sensor pod brackets. This enables seamless future upgrades to RTK-guided auto-steer and automated row following.
+          </p>
+          <div class="tech-grid" style="margin-top:20px;">
+            <div class="tech-feature-card">
+              <div class="tech-num-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+              <div>
+                <h4>RTK GPS Ready</h4>
+                <p>Centimeter level pass-to-pass accuracy eliminates overlap and lowers fertilizer spray costs.</p>
+              </div>
+            </div>
+            <div class="tech-feature-card">
+              <div class="tech-num-icon"><i class="fa-solid fa-camera"></i></div>
+              <div>
+                <h4>Dual Camera & LiDAR Brackets</h4>
+                <p>Hard points for forward obstacle detection and automated crop row edge following.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 4: Reviews -->
+        <div class="p-tab-content" id="reviewsTab" style="display:none;">
+          <div class="qv-product-grid">
+            <div>
+              <h3 style="color:var(--primary-forest); margin-bottom:14px;">Farmer Feedback</h3>
+              <div id="reviewsList" style="display:flex; flex-direction:column; gap:16px;">
+                <div style="background:var(--bg-cream); padding:20px; border-radius:var(--radius-md); border:1px solid var(--border-light);">
+                  <div class="stars-gold" style="margin-bottom:6px;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                  <strong style="display:block; color:var(--primary-forest);">Rameshwar Patil (Sambhajinagar)</strong>
+                  <p style="font-size:0.9rem; margin-top:6px; color:var(--text-body);">
+                    "Excellent power delivery and fits inside sugarcane rows cleanly without damaging side shoots. Very satisfied with Paithan factory support."
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Write Review Form -->
+            <div style="background:var(--bg-cream); padding:24px; border-radius:var(--radius-lg); border:1px solid var(--border-light);">
+              <h4 style="color:var(--primary-forest); margin-bottom:14px;">Leave a Farmer Review</h4>
+              <form onsubmit="event.preventDefault(); window.cartManager && window.cartManager.showToast('Thank you! Your review has been submitted.', 'success'); this.reset();">
+                <div class="form-group">
+                  <label>Your Full Name</label>
+                  <input type="text" class="form-control" required placeholder="e.g. Balasaheb Jadhav">
+                </div>
+                <div class="form-group">
+                  <label>Farm Location & Crop</label>
+                  <input type="text" class="form-control" required placeholder="e.g. Nashik, Grapes & Onion">
+                </div>
+                <div class="form-group">
+                  <label>Rating</label>
+                  <select class="form-control">
+                    <option value="5">⭐⭐⭐⭐⭐ (5 - Exceptional)</option>
+                    <option value="4">⭐⭐⭐⭐ (4 - Very Good)</option>
+                    <option value="3">⭐⭐⭐ (3 - Good)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Your Field Experience</label>
+                  <textarea class="form-control" rows="3" required placeholder="Share your experience with fuel economy, implement handling, or factory service..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit Review</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Related Machinery Carousel -->
+      <div style="margin-top:60px;">
+        <div class="section-title-wrap text-start">
+          <span class="eyebrow-tag"><i class="fa-solid fa-link"></i> Recommended Attachments</span>
+          <h2>Compatible Companions & Similar Machinery</h2>
+        </div>
+        <div class="products-grid-4" id="relatedProductsGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+          <span>ROBO<span class="brand-highlight">TRAC</span></span>
+        </a>
+        <p>Smart Compact Tractors & Precision Agricultural Machinery. MIDC Paithan, Maharashtra 431148.</p>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">RT Series</h4>
+        <ul class="footer-links-list">
+          <li><a href="product-details.html?id=rt-120"><i class="fa-solid fa-chevron-right"></i> RT 120 (2.5 ft Track)</a></li>
+          <li><a href="product-details.html?id=rt-180"><i class="fa-solid fa-chevron-right"></i> RT 180 (3.0 ft Track)</a></li>
+          <li><a href="product-details.html?id=rt-270"><i class="fa-solid fa-chevron-right"></i> RT 270 (3.5 ft Track)</a></li>
+          <li><a href="product-details.html?id=rt-270-ev"><i class="fa-solid fa-chevron-right"></i> RT 270 EV Concept</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Customer Care</h4>
+        <ul class="footer-links-list">
+          <li><a href="contact.html?type=test-drive"><i class="fa-solid fa-chevron-right"></i> Book Test Drive</a></li>
+          <li><a href="contact.html?type=dealership"><i class="fa-solid fa-chevron-right"></i> Dealership Inquiries</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Equipment Rental</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Factory Helpdesk</h4>
+        <p style="font-size:0.9rem;">MIDC Paithan, Maharashtra<br>Tel: +91 98815 10419<br>Email: ceo@robotrac.co.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Robotrac Tractor India Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slideout Cart -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><i class="fa-solid fa-tractor"></i> Machinery Cart</h3>
+      <button class="cart-close-btn" id="cartCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter"></div>
+  </aside>
+
+  <!-- Mobile Off-Canvas Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-menu" id="mobileNavMenu">
+    <div class="mobile-nav-head">
+      <a href="index.html" class="brand-logo" style="font-size:1.4rem;">
+        <div class="logo-leaf-icon" style="width:30px;height:30px;font-size:0.9rem;"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+      <button class="mobile-nav-close" id="mobileNavClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop.html" class="mobile-nav-link active">Tractors & Shop</a>
+      <a href="services.html" class="mobile-nav-link">Equipment Rental</a>
+      <a href="compare.html" class="mobile-nav-link">Compare Models</a>
+      <a href="about.html" class="mobile-nav-link">About & Factory</a>
+      <a href="blog.html" class="mobile-nav-link">Agri Knowledge</a>
+      <a href="contact.html" class="mobile-nav-link">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Bar -->
+  <nav class="mobile-bottom-bar">
+    <div class="mobile-bottom-nav">
+      <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="shop.html" class="bottom-nav-item active"><i class="fa-solid fa-tractor"></i><span>Tractors</span></a>
+      <a href="index.html#customizerSection" class="bottom-nav-item highlight-fab"><i class="fa-solid fa-wand-magic-sparkles"></i><span>EMI</span></a>
+      <a href="cart.html" class="bottom-nav-item cart-toggle-btn"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+      <a href="tel:+919881510419" class="bottom-nav-item"><i class="fa-solid fa-phone-volume"></i><span>Call</span></a>
+    </div>
+  </nav>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id") || "rt-180";
+      const product = PRODUCTS_DATA.find(p => p.id === productId) || PRODUCTS_DATA[1];
+
+      document.title = `${product.name} | Robotrac RT Series Paithan`;
+      document.getElementById("breadcrumbProductName").textContent = product.name;
+
+      const root = document.getElementById("productDetailRoot");
+      const isWish = window.cartManager && window.cartManager.isInWishlist(product.id);
+
+      root.innerHTML = `
+        <div class="product-detail-grid">
+          <!-- Gallery Col -->
+          <div class="detail-gallery-wrap">
+            <div class="detail-main-img-box">
+              ${product.badge ? `<span class="product-badge badge-primary">${product.badge}</span>` : ''}
+              <img src="${product.image}" alt="${product.name}" class="detail-main-img" id="productMainZoomImg">
+            </div>
+            <div class="detail-thumbs-row">
+              ${(product.gallery || [product.image]).map((img, idx) => `
+                <button class="detail-thumb-btn ${idx === 0 ? 'active' : ''}" onclick="document.getElementById('productMainZoomImg').src='${img}'; document.querySelectorAll('.detail-thumb-btn').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                  <img src="${img}" alt="Thumbnail ${idx + 1}">
+                </button>
+              `).join("")}
+            </div>
+          </div>
+
+          <!-- Info Col -->
+          <div class="detail-info-col">
+            <div class="detail-meta-header">
+              <span class="detail-brand-badge">ROBOTRAC RT SERIES • MIDC PAITHAN</span>
+              <h1 class="detail-title">${product.name}</h1>
+              <div class="qv-rating-row">
+                <div class="stars-gold">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <span class="qv-rating-num"><strong>${product.rating} / 5.0</strong> (${product.reviewsCount} Verified Farmers)</span>
+              </div>
+            </div>
+
+            <div class="detail-price-strip">
+              <div>
+                <span class="price-lbl">Target Ex-Showroom / Ex-Factory</span>
+                <div class="detail-price">${product.priceFormatted}</div>
+              </div>
+              <span class="qv-stock-badge in-stock"><i class="fa-solid fa-circle-check"></i> Factory Booking Open</span>
+            </div>
+
+            <p class="qv-desc">${product.shortDesc}</p>
+
+            ${product.type === "tractor" ? `
+              <!-- Track Width Radio Options -->
+              <div class="opt-group">
+                <label class="opt-label"><i class="fa-solid fa-arrows-left-right"></i> Choose Factory Track-Width Setting:</label>
+                <div class="track-pills">
+                  <button class="track-pill ${product.trackWidth.includes('2.5') ? 'active' : ''}" onclick="document.querySelectorAll('.track-pill').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                    <strong>2.5 ft Track</strong>
+                    <small>Narrow Orchards</small>
+                  </button>
+                  <button class="track-pill ${product.trackWidth.includes('3.0') ? 'active' : ''}" onclick="document.querySelectorAll('.track-pill').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                    <strong>3.0 ft Track</strong>
+                    <small>Sugarcane / Cotton</small>
+                  </button>
+                  <button class="track-pill ${product.trackWidth.includes('3.5') ? 'active' : ''}" onclick="document.querySelectorAll('.track-pill').forEach(b=>b.classList.remove('active')); this.classList.add('active');">
+                    <strong>3.5 ft Track</strong>
+                    <small>Broad Field</small>
+                  </button>
+                </div>
+              </div>
+            ` : ''}
+
+            <!-- Quick Specs Highlight -->
+            <div class="qv-specs-summary" style="background:#ffffff; padding:18px; border-radius:var(--radius-md); border:1px solid var(--border-light); margin-bottom:24px;">
+              ${product.hp ? `<div class="qv-spec-pill"><i class="fa-solid fa-gauge-high"></i> <strong>Engine Power:</strong> ${product.hp}</div>` : ''}
+              ${product.trackWidth ? `<div class="qv-spec-pill"><i class="fa-solid fa-arrows-left-right"></i> <strong>Track Width:</strong> ${product.trackWidth}</div>` : ''}
+              <div class="qv-spec-pill"><i class="fa-solid fa-shield-halved"></i> <strong>Warranty:</strong> 2 Years Standard Coverage Included</div>
+              <div class="qv-spec-pill"><i class="fa-solid fa-hand-holding-dollar"></i> <strong>Govt Subsidies:</strong> Eligible for Central SMAM & MahaDBT Subsidies up to 50%</div>
+            </div>
+
+            <!-- Actions Row -->
+            <div class="qv-action-row">
+              <div class="qv-qty-selector">
+                <button onclick="const el=document.getElementById('pDetailQty'); if(el.value>1) el.value--;">-</button>
+                <input type="number" value="1" min="1" max="10" id="pDetailQty">
+                <button onclick="const el=document.getElementById('pDetailQty'); el.value++;">+</button>
+              </div>
+              <button class="btn btn-primary btn-lg" onclick="cartManager.addToCart('${product.id}', parseInt(document.getElementById('pDetailQty').value));">
+                <i class="fa-solid fa-cart-plus"></i> Add to Cart
+              </button>
+              <button class="btn btn-icon btn-outline ${isWish ? 'active' : ''}" data-add-wishlist="${product.id}" title="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+              </button>
+              <a href="compare.html?add=${product.id}" class="btn btn-icon btn-outline" title="Compare">
+                <i class="fa-solid fa-code-compare"></i>
+              </a>
+            </div>
+
+            <div style="display:flex; gap:12px; margin-top:14px;">
+              <a href="contact.html?type=test-drive&model=${product.id}" class="btn btn-outline w-100">
+                <i class="fa-solid fa-calendar-check"></i> Book Paithan Test Drive
+              </a>
+              <a href="index.html#customizerSection" class="btn btn-accent w-100">
+                <i class="fa-solid fa-calculator"></i> Calculate Monthly EMI
+              </a>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Render Technical Specs Table
+      const specTable = document.getElementById("detailSpecTable");
+      if (product.specs) {
+        specTable.innerHTML = `
+          <thead>
+            <tr><th>Technical Parameter</th><th>Specification Detail</th></tr>
+          </thead>
+          <tbody>
+            ${Object.keys(product.specs).map(key => `
+              <tr>
+                <td><strong>${key}</strong></td>
+                <td>${product.specs[key]}</td>
+              </tr>
+            `).join("")}
+          </tbody>
+        `;
+      }
+
+      // Render Features List
+      const featList = document.getElementById("detailFeaturesList");
+      if (product.features) {
+        featList.innerHTML = product.features.map(f => `
+          <li><i class="fa-solid fa-circle-check" style="color:var(--primary-leaf); margin-right:8px;"></i> ${f}</li>
+        `).join("");
+      }
+
+      // Render Related Products
+      const relatedGrid = document.getElementById("relatedProductsGrid");
+      const related = PRODUCTS_DATA.filter(p => p.id !== product.id).slice(0, 4);
+      relatedGrid.innerHTML = related.map(p => generateProductCardHtml(p)).join("");
+
+      // Tab switcher
+      document.querySelectorAll(".p-tab-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".p-tab-btn").forEach(b => b.classList.remove("active"));
+          document.querySelectorAll(".p-tab-content").forEach(c => c.style.display = "none");
+          btn.classList.add("active");
+          const target = document.getElementById(btn.getAttribute("data-tab"));
+          if (target) target.style.display = "block";
+        });
+      });
+    });
+  </script>
+</body>
+</html>

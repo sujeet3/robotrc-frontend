@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us & Dealership Inquiries | Robotrac Tractor India</title>
+  <meta name="description" content="Contact Robotrac Tractor India at MIDC Paithan, Maharashtra. Book a test drive, apply for dealership franchise, or schedule a factory tour." />
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚜</text></svg>" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- Top Ticker -->
+  <div class="top-ticker">
+    <div class="container top-ticker-inner">
+      <div class="ticker-highlight">
+        <span class="ticker-badge"><i class="fa-solid fa-handshake"></i> Dealer Network Open</span>
+        <span>Accepting Dealership & Service Partner applications across Maharashtra, Gujarat, MP, and Karnataka.</span>
+      </div>
+      <div class="ticker-links">
+        <a href="tel:+919881510419"><i class="fa-solid fa-phone"></i> Hotline: +91 98815 10419</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="mainNavbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+
+      <nav class="nav-menu-desktop" aria-label="Main Navigation">
+        <div class="nav-item"><a href="index.html" class="nav-link-item">Home</a></div>
+        <div class="nav-item"><a href="shop.html" class="nav-link-item">Tractors & Shop</a></div>
+        <div class="nav-item"><a href="services.html" class="nav-link-item">Equipment & Rental</a></div>
+        <div class="nav-item"><a href="compare.html" class="nav-link-item">Compare Models</a></div>
+        <div class="nav-item"><a href="about.html" class="nav-link-item">About & Factory</a></div>
+        <div class="nav-item"><a href="blog.html" class="nav-link-item">Agri Knowledge</a></div>
+        <div class="nav-item"><a href="contact.html" class="nav-link-item active">Contact Us</a></div>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn search-trigger-btn" aria-label="Search site"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="nav-icon-btn cart-toggle-btn" aria-label="Cart"><i class="fa-solid fa-cart-shopping"></i><span class="cart-count-badge" style="display:none;">0</span></button>
+        <a href="login.html" class="nav-icon-btn" aria-label="Farmer Login" title="Farmer Account"><i class="fa-solid fa-user"></i></a>
+        <button class="mobile-menu-toggle" id="mobileNavToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="page-hero-banner">
+    <div class="container">
+      <h1 class="page-hero-title">Connect with Robotrac Tractor India</h1>
+      <div class="breadcrumb-list">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span>Contact & Dealership</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Grid -->
+  <section class="section-padding" style="background: var(--bg-cream);">
+    <div class="container">
+      <div class="contact-layout-grid">
+        <!-- Interactive Form Box -->
+        <div class="contact-tabs-box">
+          <div class="contact-tab-nav" id="contactTabNav">
+            <button class="c-tab-btn active" data-type="test-drive"><i class="fa-solid fa-steering-wheel"></i> Book Test Drive</button>
+            <button class="c-tab-btn" data-type="dealership"><i class="fa-solid fa-handshake"></i> Dealership Inquiry</button>
+            <button class="c-tab-btn" data-type="factory-visit"><i class="fa-solid fa-building-flag"></i> Factory Tour</button>
+            <button class="c-tab-btn" data-type="general"><i class="fa-solid fa-envelope"></i> General Inquiry</button>
+          </div>
+
+          <h3 style="color:var(--primary-forest); margin-bottom:8px;" id="formHeading">Schedule a Machine Test Drive</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:24px;" id="formSubheading">Experience RT Series track width precision and power firsthand at our Paithan demo field.</p>
+
+          <form onsubmit="event.preventDefault(); window.cartManager && window.cartManager.showToast('Inquiry submitted! Our representative will call you shortly.', 'success'); this.reset();">
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Your Full Name *</label>
+                <input type="text" class="form-control" required placeholder="e.g. Balasaheb Jadhav">
+              </div>
+              <div class="form-group">
+                <label>Mobile Number *</label>
+                <input type="tel" class="form-control" required placeholder="+91 98815 00000">
+              </div>
+            </div>
+
+            <div class="form-row-2">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="farmer@example.com">
+              </div>
+              <div class="form-group">
+                <label>Tractor Model of Interest</label>
+                <select class="form-control" id="contactModelSelect">
+                  <option value="rt-180">Robotrac RT 180 (38 HP - 3.0 ft Track)</option>
+                  <option value="rt-120">Robotrac RT 120 (25 HP - 2.5 ft Track)</option>
+                  <option value="rt-270">Robotrac RT 270 (52 HP - 3.5 ft Track)</option>
+                  <option value="rt-270-ev">Robotrac RT 270 EV Electric Concept</option>
+                  <option value="implements">Agricultural Implements Range</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>District & State *</label>
+              <input type="text" class="form-control" required placeholder="e.g. Nashik, Maharashtra">
+            </div>
+
+            <div class="form-group">
+              <label>Your Message / Specific Requirements</label>
+              <textarea class="form-control" rows="4" placeholder="Tell us about your farm crop type, acreage, or proposed dealership region..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg w-100">
+              <i class="fa-solid fa-paper-plane"></i> Send Request to Factory Team
+            </button>
+          </form>
+        </div>
+
+        <!-- Location & Contact Info Card -->
+        <div class="paithan-location-card">
+          <h3>Registered Office & Plant</h3>
+          <p style="color:rgba(255,255,255,0.85); font-size:0.92rem; margin-bottom:24px;">
+            Visit our manufacturing and R&D facility in Paithan to see tractors on the assembly line and test machines in action.
+          </p>
+
+          <div class="paithan-info-list">
+            <div class="paithan-info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Factory Address:</strong>
+                <p style="margin:2px 0 0 0; color:rgba(255,255,255,0.8); font-size:0.88rem;">
+                  A109, 110 Mudhalwadi Road, Opp. Pratishthan Ind, MIDC Paithan, Tq. Paithan, Dist. Chhatrapati Sambhajinagar, Maharashtra 431148
+                </p>
+              </div>
+            </div>
+
+            <div class="paithan-info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Direct Telephone:</strong>
+                <p style="margin:2px 0 0 0; color:rgba(255,255,255,0.8); font-size:0.88rem;">
+                  +91 98815 10419 / +91 74208 48939
+                </p>
+              </div>
+            </div>
+
+            <div class="paithan-info-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Email Communications:</strong>
+                <p style="margin:2px 0 0 0; color:rgba(255,255,255,0.8); font-size:0.88rem;">
+                  ceo@robotrac.co.in / hr@robotrac.co.in
+                </p>
+              </div>
+            </div>
+
+            <div class="paithan-info-item">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <strong>Factory Working Hours:</strong>
+                <p style="margin:2px 0 0 0; color:rgba(255,255,255,0.8); font-size:0.88rem;">
+                  Monday – Saturday: 9:00 AM – 6:30 PM (IST)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding-top:20px; border-top:1px solid rgba(255,255,255,0.15);">
+            <a href="tel:+919881510419" class="btn btn-accent w-100">
+              <i class="fa-solid fa-phone-volume"></i> Call Factory Desk Directly
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Accordions -->
+      <div class="faq-accordion-box">
+        <div class="section-title-wrap">
+          <span class="eyebrow-tag"><i class="fa-solid fa-circle-question"></i> Answers for Farmers</span>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item active">
+            <div class="faq-item-header">
+              <h4>What is the target ex-showroom pricing of the RT Series?</h4>
+              <i class="fa-solid fa-chevron-down faq-item-icon"></i>
+            </div>
+            <div class="faq-item-body">
+              <p style="font-size:0.92rem; color:var(--text-body); margin:0;">
+                Target ex-showroom figures are: <strong>RT 120</strong> (25 HP, 2.5 ft track) at ₹4.92 Lakh; <strong>RT 180</strong> (38 HP, 3.0 ft track) at ₹6.70 Lakh; and <strong>RT 270</strong> (52 HP, 3.5 ft track) at ₹9.25 Lakh. All figures include dealer margins and standard 2-year warranty provision.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <h4>How do track-width options benefit different crops?</h4>
+              <i class="fa-solid fa-chevron-down faq-item-icon"></i>
+            </div>
+            <div class="faq-item-body">
+              <p style="font-size:0.92rem; color:var(--text-body); margin:0;">
+                Conventional tractors have wide fixed track widths that crush side roots in narrow vineyards, pomegranate orchards, or sugarcane rows. The RT Series provides 2.5 ft, 3.0 ft, and 3.5 ft track configurations, allowing the tractor to travel directly down narrow crop rows with zero root soil compaction.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <h4>Are Robotrac tractors eligible for government mechanization subsidies?</h4>
+              <i class="fa-solid fa-chevron-down faq-item-icon"></i>
+            </div>
+            <div class="faq-item-body">
+              <p style="font-size:0.92rem; color:var(--text-body); margin:0;">
+                Yes. Eligible small and marginal farmers, women farmers, and SC/ST farmers can avail subsidies ranging between 40% and 50% under the Central SMAM scheme and Maharashtra MahaDBT agricultural mechanization portal. Our Paithan team assists with documentation.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <h4>What warranty and service support is provided?</h4>
+              <i class="fa-solid fa-chevron-down faq-item-icon"></i>
+            </div>
+            <div class="faq-item-body">
+              <p style="font-size:0.92rem; color:var(--text-body); margin:0;">
+                Every RT Series tractor includes a 2-Year / 2000-Hour comprehensive factory warranty. Mobile Service Vans deployed from MIDC Paithan provide regular scheduled servicing directly on your farm field.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-item-header">
+              <h4>How can dealers and franchise partners apply?</h4>
+              <i class="fa-solid fa-chevron-down faq-item-icon"></i>
+            </div>
+            <div class="faq-item-body">
+              <p style="font-size:0.92rem; color:var(--text-body); margin:0;">
+                Automobile and tractor dealership partners with dedicated showroom and service workshop space can apply using our Dealership Application tab above or email <strong>ceo@robotrac.co.in</strong> for territory allocation and margin details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top-grid">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-leaf-icon"><i class="fa-solid fa-tractor"></i></div>
+          <span>ROBO<span class="brand-highlight">TRAC</span></span>
+        </a>
+        <p>Smart Compact Tractors & Precision Agricultural Machinery. MIDC Paithan, Maharashtra 431148.</p>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Quick Links</h4>
+        <ul class="footer-links-list">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+          <li><a href="shop.html"><i class="fa-solid fa-chevron-right"></i> Shop Catalog</a></li>
+          <li><a href="services.html"><i class="fa-solid fa-chevron-right"></i> Equipment Rental</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Corporate</h4>
+        <ul class="footer-links-list">
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> Factory Profile</a></li>
+          <li><a href="contact.html?type=dealership"><i class="fa-solid fa-chevron-right"></i> Dealership Portal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer-widget-title">Factory Address</h4>
+        <p style="font-size:0.9rem;">MIDC Paithan, Maharashtra<br>Tel: +91 98815 10419<br>Email: ceo@robotrac.co.in</p>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 Robotrac Tractor India Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slideout Cart -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><i class="fa-solid fa-tractor"></i> Machinery Cart</h3>
+      <button class="cart-close-btn" id="cartCloseBtn"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-drawer-items" id="cartDrawerItems"></div>
+    <div class="cart-drawer-footer" id="cartDrawerFooter"></div>
+  </aside>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav-menu" id="mobileNavMenu">
+    <div class="mobile-nav-head">
+      <a href="index.html" class="brand-logo" style="font-size:1.4rem;">
+        <div class="logo-leaf-icon" style="width:30px;height:30px;font-size:0.9rem;"><i class="fa-solid fa-tractor"></i></div>
+        <span>ROBO<span class="brand-highlight">TRAC</span></span>
+      </a>
+      <button class="mobile-nav-close" id="mobileNavClose"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="shop.html" class="mobile-nav-link">Tractors & Shop</a>
+      <a href="services.html" class="mobile-nav-link">Equipment Rental</a>
+      <a href="compare.html" class="mobile-nav-link">Compare Models</a>
+      <a href="about.html" class="mobile-nav-link">About & Factory</a>
+      <a href="blog.html" class="mobile-nav-link">Agri Knowledge</a>
+      <a href="contact.html" class="mobile-nav-link active">Contact Us</a>
+    </div>
+  </aside>
+
+  <!-- Mobile Bottom Bar -->
+  <nav class="mobile-bottom-bar">
+    <div class="mobile-bottom-nav">
+      <a href="index.html" class="bottom-nav-item"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="shop.html" class="bottom-nav-item"><i class="fa-solid fa-tractor"></i><span>Tractors</span></a>
+      <a href="index.html#customizerSection" class="bottom-nav-item highlight-fab"><i class="fa-solid fa-wand-magic-sparkles"></i><span>EMI</span></a>
+      <a href="cart.html" class="bottom-nav-item cart-toggle-btn"><i class="fa-solid fa-cart-shopping"></i><span>Cart</span></a>
+      <a href="tel:+919881510419" class="bottom-nav-item"><i class="fa-solid fa-phone-volume"></i><span>Call</span></a>
+    </div>
+  </nav>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const reqType = urlParams.get("type") || urlParams.get("subject") || "test-drive";
+      const modelParam = urlParams.get("model");
+
+      const headings = {
+        "test-drive": { title: "Schedule a Machine Test Drive", sub: "Experience RT Series track width precision and power firsthand at our Paithan demo field." },
+        "dealership": { title: "Dealership & Franchise Partnership Inquiry", sub: "Partner with Robotrac to distribute high-margin smart compact tractors and implements in your region." },
+        "factory-visit": { title: "Book a Factory & R&D Plant Tour", sub: "Visit our manufacturing and testing facilities at MIDC Paithan, Maharashtra." },
+        "general": { title: "Direct Communication with Robotrac Team", sub: "For general inquiries, corporate questions, or investor information." }
+      };
+
+      const updateFormHeaders = (t) => {
+        if (headings[t]) {
+          document.getElementById("formHeading").textContent = headings[t].title;
+          document.getElementById("formSubheading").textContent = headings[t].sub;
+        }
+      };
+
+      // Select initial tab
+      document.querySelectorAll(".c-tab-btn").forEach(btn => {
+        if (btn.getAttribute("data-type") === reqType) {
+          document.querySelectorAll(".c-tab-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          updateFormHeaders(reqType);
+        }
+
+        btn.addEventListener("click", () => {
+          document.querySelectorAll(".c-tab-btn").forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
+          const t = btn.getAttribute("data-type");
+          updateFormHeaders(t);
+        });
+      });
+
+      if (modelParam && document.getElementById("contactModelSelect")) {
+        document.getElementById("contactModelSelect").value = modelParam;
+      }
+    });
+  </script>
+</body>
+</html>
