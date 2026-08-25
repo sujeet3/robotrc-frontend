@@ -19,11 +19,11 @@ const PRODUCTS_DATA = [
     badge: "Popular",
     rating: 4.8,
     reviewsCount: 34,
-    image: "images/tractor-rt120.jpg",
+    image: "images/tractor-rt120.webp",
     gallery: [
-      "images/tractor-rt120.jpg",
-      "images/hero-tractor-banner.jpg",
-      "images/smart-autonomy-tech.jpg"
+      "images/tractor-rt120.webp",
+      "images/hero-tractor-banner.webp",
+      "images/smart-autonomy-tech.webp"
     ],
     inStock: true,
     shortDesc: "Ultra-compact smart tractor engineered specifically for narrow orchard rows, vineyards, inter-cultivation, and small farm plots with full autonomy readiness.",
@@ -49,6 +49,50 @@ const PRODUCTS_DATA = [
     compatibleImplements: ["rotary-tiller", "plough", "cultivator", "sprayer", "trailer", "auger"]
   },
   {
+    id: "rt-160",
+    name: "Robotrac RT 160 Orchard & Inter-Row Tractor",
+    shortName: "RT 160",
+    type: "tractor",
+    category: "tractors",
+    targetAudience: "Orchardists, Vineyards & Row Crop Farmers",
+    trackWidth: "2.8 ft (850 mm)",
+    hp: "32 HP Class",
+    price: 585000,
+    priceFormatted: "₹ 5.85 Lakh",
+    tag: "Orchard & Row-Crop Specialist",
+    badge: "New Launch",
+    rating: 4.85,
+    reviewsCount: 29,
+    image: "images/tractor-rt160.webp",
+    gallery: [
+      "images/tractor-rt160.webp",
+      "images/hero-tractor-banner.webp",
+      "images/smart-autonomy-tech.webp"
+    ],
+    inStock: true,
+    shortDesc: "Specially engineered 2.8 ft track width with dual camera sensor pillars and high-torque direct injection diesel for fruit orchards, vineyards, and precision inter-row cultivation.",
+    specs: {
+      "Engine / Power": "32 HP 3-Cylinder Direct-Injection Diesel",
+      "Track Width": "2.8 ft (850 mm Inter-Row Track)",
+      "Transmission": "9 Forward + 3 Reverse Synchromesh Shuttle",
+      "PTO Power & RPM": "28.0 HP @ 540 / 750 Dual Speed",
+      "Hydraulic Lift Capacity": "950 kg with ADDC & Draft Control",
+      "Sensor Architecture": "Autonomy-Ready Dual Camera Pods & CAN 2.0B",
+      "Turning Radius": "2.25 meters (Brake Assisted)",
+      "Fuel Tank Capacity": "32 Litres",
+      "Manufacturing Location": "MIDC Paithan, Maharashtra",
+      "Warranty": "2 Years / 2000 Hours Comprehensive"
+    },
+    features: [
+      "2.8 ft narrow footprint fits tight orchard canopies without crop or fruit bruising",
+      "Dual forward & rear autonomy-ready camera masts for AI crop and furrow scanning",
+      "High clearance underbelly with shielded hydraulic pipes and low soil compaction",
+      "Subsidies applicable with fast-track direct bank clearance (SMAM / MahaDBT)",
+      "Factory tested at Paithan R&D center for Indian soil and horticulture conditions"
+    ],
+    compatibleImplements: ["rotary-tiller", "plough", "cultivator", "sprayer", "mulch-layer", "trailer", "finishing-mower"]
+  },
+  {
     id: "rt-180",
     name: "Robotrac RT 180 Versatile Smart Tractor",
     shortName: "RT 180",
@@ -63,11 +107,11 @@ const PRODUCTS_DATA = [
     badge: "Best Seller",
     rating: 4.9,
     reviewsCount: 68,
-    image: "images/tractor-rt180.jpg",
+    image: "images/tractor-rt180.webp",
     gallery: [
-      "images/tractor-rt180.jpg",
-      "images/hero-tractor-banner.jpg",
-      "images/smart-autonomy-tech.jpg"
+      "images/tractor-rt180.webp",
+      "images/hero-tractor-banner.webp",
+      "images/smart-autonomy-tech.webp"
     ],
     inStock: true,
     shortDesc: "The undisputed workhorse of the RT Series. Balanced power, optimal 3.0 ft track width for sugarcane, cotton, soybean and heavy tillage operations.",
@@ -107,11 +151,11 @@ const PRODUCTS_DATA = [
     badge: "High Power",
     rating: 5.0,
     reviewsCount: 42,
-    image: "images/tractor-rt270.jpg",
+    image: "images/tractor-rt270.webp",
     gallery: [
-      "images/tractor-rt270.jpg",
-      "images/hero-tractor-banner.jpg",
-      "images/smart-autonomy-tech.jpg"
+      "images/tractor-rt270.webp",
+      "images/hero-tractor-banner.webp",
+      "images/smart-autonomy-tech.webp"
     ],
     inStock: true,
     shortDesc: "High capacity, high traction powerhouse with 3.5 ft track width for heavy deep plowing, combine harvesting, large trailers, and commercial custom hiring.",
@@ -151,11 +195,11 @@ const PRODUCTS_DATA = [
     badge: "EV Innovation",
     rating: 4.9,
     reviewsCount: 19,
-    image: "images/rt270ev.jpg",
+    image: "images/rt270ev.webp",
     gallery: [
-      "images/rt270ev.jpg",
-      "images/smart-autonomy-tech.jpg",
-      "images/hero-tractor-banner.jpg"
+      "images/rt270ev.webp",
+      "images/smart-autonomy-tech.webp",
+      "images/hero-tractor-banner.webp"
     ],
     inStock: true,
     shortDesc: "Next-generation 100% electric agricultural platform with modular swap battery, instant electric torque, ultra-low operating cost (₹35/hr), and quiet indoor operation.",
@@ -179,6 +223,50 @@ const PRODUCTS_DATA = [
     ],
     compatibleImplements: ["rotary-tiller", "plough", "disc-harrow", "sprayer", "finishing-mower", "trailer", "auger"]
   },
+  {
+    id: "rt-autonomous",
+    name: "Robotrac RT Autonomous Driverless Platform",
+    shortName: "RT Autonomous",
+    type: "tractor",
+    category: "tractors",
+    targetAudience: "Large Acreage, Custom Hiring & 24/7 Field Operations",
+    trackWidth: "3.0 ft / 3.5 ft Modular",
+    hp: "50 HP AI Class",
+    price: 1280000,
+    priceFormatted: "₹ 12.80 Lakh",
+    tag: "Level 4 Driverless Agro-Robotics",
+    badge: "Autonomous AI",
+    rating: 5.0,
+    reviewsCount: 16,
+    image: "images/smart-autonomy-tech.webp",
+    gallery: [
+      "images/smart-autonomy-tech.webp",
+      "images/tractor-rt180.webp",
+      "images/hero-tractor-banner.webp"
+    ],
+    inStock: true,
+    shortDesc: "Next-gen driverless agricultural robot platform featuring 360° LiDAR, dual RTK-GNSS sub-inch guidance, AI obstacle detection, and automated 24/7 day-night field operations.",
+    specs: {
+      "Autonomy Stack": "Level 4 Drive-by-Wire + RTK GNSS Sub-Inch Accuracy",
+      "Perception": "360° Solid-State LiDAR + Dual Stereo AI Cameras",
+      "Engine / Power": "50 HP High-Torque CRDi Diesel / Hybrid Ready",
+      "Track Width": "3.0 ft / 3.5 ft Modular Variable Track",
+      "Transmission": "Drive-by-Wire Electro-Hydraulic Shuttle",
+      "PTO Power & RPM": "44 HP Independent Electro-Hydraulic PTO",
+      "Hydraulic Lift": "1,750 kg Automated Hitch with Depth Sensing",
+      "Safety & Geofencing": "Multi-Layer Ultrasonic Bumpers + Cloud E-Stop",
+      "Manufacturing Location": "MIDC Paithan, Maharashtra",
+      "Warranty": "3 Years Comprehensive System Warranty"
+    },
+    features: [
+      "Full driverless autonomous navigation along pre-mapped AB boundary lines",
+      "Night tillage and 24/7 continuous operation to beat seasonal weather windows",
+      "Remote fleet control and live telemetry monitoring via smartphone app",
+      "Eliminates operator fatigue and reduces chemical spray exposure to zero",
+      "Eligible for Government High-Tech Innovation Subsidies and Agritech Grants"
+    ],
+    compatibleImplements: ["rotary-tiller", "plough", "disc-harrow", "cultivator", "sprayer", "reaper", "mulch-layer", "trailer"]
+  },
 
   // --- IMPLEMENTS: SOIL PREPARATION ---
   {
@@ -193,8 +281,8 @@ const PRODUCTS_DATA = [
     badge: "Top Seller",
     rating: 4.9,
     reviewsCount: 52,
-    image: "images/rotary-tiller.jpg",
-    gallery: ["images/rotary-tiller.jpg"],
+    image: "images/rotary-tiller.webp",
+    gallery: ["images/rotary-tiller.webp"],
     shortDesc: "Multi-speed boron steel rotary tiller providing optimal seedbed preparation in single pass with heavy-duty oil-bath gear drive.",
     specs: {
       "Working Width": "1.2 m to 1.8 m (Matching RT Series track)",
@@ -223,8 +311,8 @@ const PRODUCTS_DATA = [
     badge: "Essential",
     rating: 4.8,
     reviewsCount: 29,
-    image: "images/plough.jpg",
-    gallery: ["images/plough.jpg"],
+    image: "images/plough.webp",
+    gallery: ["images/plough.webp"],
     shortDesc: "High-grade alloy steel mouldboard plough designed for deep primary tillage, weed inversion, and soil aeration.",
     specs: {
       "Bottoms": "2 Bottoms (Replaceable wear points)",
@@ -251,8 +339,8 @@ const PRODUCTS_DATA = [
     badge: "Durable",
     rating: 4.7,
     reviewsCount: 21,
-    image: "images/disc-harrow.jpg",
-    gallery: ["images/disc-harrow.jpg"],
+    image: "images/disc-harrow.webp",
+    gallery: ["images/disc-harrow.webp"],
     shortDesc: "Notched boron steel disc harrow for breaking hard clods, burying crop stubble, and preparing seedbeds in tough soils.",
     specs: {
       "Discs": "12 to 16 Notched & Plain High Carbon Discs",
@@ -279,8 +367,8 @@ const PRODUCTS_DATA = [
     badge: "Economical",
     rating: 4.8,
     reviewsCount: 38,
-    image: "images/cultivator.jpg",
-    gallery: ["images/cultivator.jpg"],
+    image: "images/cultivator.webp",
+    gallery: ["images/cultivator.webp"],
     shortDesc: "Multi-purpose 7/9-tyne cultivator with interchangeable reversible shovels and optional ridging attachments.",
     specs: {
       "Tynes": "7 / 9 Heavy-duty forged spring steel tynes",
@@ -308,8 +396,8 @@ const PRODUCTS_DATA = [
     badge: "High Yield",
     rating: 4.9,
     reviewsCount: 44,
-    image: "images/reaper.jpg",
-    gallery: ["images/reaper.jpg"],
+    image: "images/reaper.webp",
+    gallery: ["images/reaper.webp"],
     shortDesc: "Precision crop cutter and windrower for paddy, wheat, soybean, and pulses with 5-blade cutter bar.",
     specs: {
       "Cutter Bar Width": "4.0 to 5.0 ft",
@@ -336,8 +424,8 @@ const PRODUCTS_DATA = [
     badge: "Specialist",
     rating: 4.8,
     reviewsCount: 18,
-    image: "images/potato-digger.jpg",
-    gallery: ["images/potato-digger.jpg"],
+    image: "images/potato-digger.webp",
+    gallery: ["images/potato-digger.webp"],
     shortDesc: "High-efficiency single & dual row root crop harvester with vibrating rod conveyor for clean tuber separation.",
     specs: {
       "Rows": "1 or 2 Rows adjustable width",
@@ -363,8 +451,8 @@ const PRODUCTS_DATA = [
     badge: "Horticulture",
     rating: 4.9,
     reviewsCount: 23,
-    image: "images/mulch-layer.jpg",
-    gallery: ["images/mulch-layer.jpg"],
+    image: "images/mulch-layer.webp",
+    gallery: ["images/mulch-layer.webp"],
     shortDesc: "Simultaneously lays plastic mulch film, embeds drip irrigation tube, and seals film edges with soil in one tractor pass.",
     specs: {
       "Film Width": "Up to 1.2 meters (3 to 4 ft)",
@@ -390,8 +478,8 @@ const PRODUCTS_DATA = [
     badge: "Fast Spreading",
     rating: 4.6,
     reviewsCount: 31,
-    image: "images/broadcaster.jpg",
-    gallery: ["images/broadcaster.jpg"],
+    image: "images/broadcaster.webp",
+    gallery: ["images/broadcaster.webp"],
     shortDesc: "High capacity hopper with PTO-driven stainless steel spreading disc for uniform distribution of fertilizer, urea, and seed.",
     specs: {
       "Hopper Capacity": "350 to 500 Litres (Polyethylene/Steel)",
@@ -419,8 +507,8 @@ const PRODUCTS_DATA = [
     badge: "Heavy Duty",
     rating: 4.9,
     reviewsCount: 56,
-    image: "images/trailer.jpg",
-    gallery: ["images/trailer.jpg"],
+    image: "images/trailer.webp",
+    gallery: ["images/trailer.webp"],
     shortDesc: "Tough structural channel frame agricultural trailer with hydraulic telescopic tipping cylinder and drop-down side panels.",
     specs: {
       "Capacity": "3 Ton / 5 Ton Payload",
@@ -447,8 +535,8 @@ const PRODUCTS_DATA = [
     badge: "Utility",
     rating: 4.7,
     reviewsCount: 15,
-    image: "images/tanker.jpg",
-    gallery: ["images/tanker.jpg"],
+    image: "images/tanker.webp",
+    gallery: ["images/tanker.webp"],
     shortDesc: "Heavy epoxy-coated MS / SS water tanker trailer designed for orchard irrigation, construction, spraying, and farm water transport.",
     specs: {
       "Capacity": "2,000 / 3,000 / 5,000 Litres",
@@ -474,8 +562,8 @@ const PRODUCTS_DATA = [
     badge: "Multitasker",
     rating: 4.9,
     reviewsCount: 27,
-    image: "images/front-loader.jpg",
-    gallery: ["images/front-loader.jpg"],
+    image: "images/front-loader.webp",
+    gallery: ["images/front-loader.webp"],
     shortDesc: "Heavy loader arms with joystick hydraulic control and quick-attach bucket for manure, silage, gravel, and grain handling.",
     specs: {
       "Bucket Capacity": "0.4 to 0.6 cu.m (450 – 700 kg payload)",
@@ -501,8 +589,8 @@ const PRODUCTS_DATA = [
     badge: "Logistics",
     rating: 4.8,
     reviewsCount: 14,
-    image: "images/forklift.jpg",
-    gallery: ["images/forklift.jpg"],
+    image: "images/forklift.webp",
+    gallery: ["images/forklift.webp"],
     shortDesc: "3-point linkage mounted hydraulic duplex mast forklift for lifting crop crates, fruit bins, and palletized fertilizers.",
     specs: {
       "Lift Capacity": "800 – 1,200 kg",
@@ -530,8 +618,8 @@ const PRODUCTS_DATA = [
     badge: "Crop Protection",
     rating: 4.9,
     reviewsCount: 39,
-    image: "images/sprayer.jpg",
-    gallery: ["images/sprayer.jpg"],
+    image: "images/sprayer.webp",
+    gallery: ["images/sprayer.webp"],
     shortDesc: "High pressure diaphragm pump boom sprayer with Italian brass anti-drip nozzles for orchards, vineyards, and field crops.",
     specs: {
       "Tank Capacity": "400 / 600 Litres UV Polyethylene",
@@ -558,8 +646,8 @@ const PRODUCTS_DATA = [
     badge: "Heavy Shredder",
     rating: 4.8,
     reviewsCount: 22,
-    image: "images/flail-mower.jpg",
-    gallery: ["images/flail-mower.jpg"],
+    image: "images/flail-mower.webp",
+    gallery: ["images/flail-mower.webp"],
     shortDesc: "Hammer flail mulcher for shredding cotton stalks, sugarcane trash, orchard prunings, and heavy grass into organic compost.",
     specs: {
       "Working Width": "1.3 m to 1.75 m",
@@ -585,8 +673,8 @@ const PRODUCTS_DATA = [
     badge: "Precision Cut",
     rating: 4.7,
     reviewsCount: 16,
-    image: "images/finishing-mower.jpg",
-    gallery: ["images/finishing-mower.jpg"],
+    image: "images/finishing-mower.webp",
+    gallery: ["images/finishing-mower.webp"],
     shortDesc: "Triple-blade rear finishing mower for precision turf care, golf courses, resort lawns, and highway median grass management.",
     specs: {
       "Cutting Width": "1.5 to 1.8 meters",
@@ -612,8 +700,8 @@ const PRODUCTS_DATA = [
     badge: "Land Prep",
     rating: 4.8,
     reviewsCount: 19,
-    image: "images/front-blade.jpg",
-    gallery: ["images/front-blade.jpg"],
+    image: "images/front-blade.webp",
+    gallery: ["images/front-blade.webp"],
     shortDesc: "Front mounted heavy leveling blade with dual hydraulic cylinders for bund forming, farm road maintenance, and earth scraping.",
     specs: {
       "Blade Width": "1.8 to 2.2 meters",
@@ -641,8 +729,8 @@ const PRODUCTS_DATA = [
     badge: "Fencing & Planting",
     rating: 4.9,
     reviewsCount: 33,
-    image: "images/auger.jpg",
-    gallery: ["images/auger.jpg"],
+    image: "images/auger.webp",
+    gallery: ["images/auger.webp"],
     shortDesc: "Planetary gear PTO / hydraulic auger drill for rapid plantation pits, solar structure fencing, and tree sapling planting.",
     specs: {
       "Auger Diameters": "9\", 12\", 18\", and 24\" interchangeable bits",
@@ -669,8 +757,8 @@ const PRODUCTS_DATA = [
     badge: "Farm Power",
     rating: 4.8,
     reviewsCount: 25,
-    image: "images/generator.jpg",
-    gallery: ["images/generator.jpg"],
+    image: "images/generator.webp",
+    gallery: ["images/generator.webp"],
     shortDesc: "Tractor 3-point mounted 15 kVA / 25 kVA brushless alternator providing reliable 3-phase farm power for tube-wells and cold rooms during outages.",
     specs: {
       "Output Capacity": "15 kVA (Single/3-Phase) or 25 kVA (3-Phase)",
@@ -696,7 +784,7 @@ const BLOG_POSTS = [
     date: "Aug 18, 2026",
     readTime: "6 min read",
     author: "Agronomy Advisory Desk",
-    image: "images/farmer-testimonial.jpg",
+    image: "images/farmer-testimonial.webp",
     excerpt: "Complete step-by-step guide to applying for Maharashtra MahaDBT and Central SMAM subsidies for compact tractors and smart implements.",
     content: `Government agricultural mechanization subsidies have been expanded to encourage the adoption of smart compact tractors and high-precision implements. For small and marginal farmers, subsidies cover between 40% and 50% of the ex-showroom price.`
   },
@@ -707,7 +795,7 @@ const BLOG_POSTS = [
     date: "Aug 10, 2026",
     readTime: "8 min read",
     author: "Robotrac R&D Team",
-    image: "images/tractor-rt180.jpg",
+    image: "images/tractor-rt180.webp",
     excerpt: "Why fixed track width tractors damage crops and how RT Series track-width options maximize yield in sugarcane, cotton, and orchards.",
     content: `Indian crop row spacing varies drastically: vineyards and pomegranate orchards require 2.5 ft narrow clearance, while cotton and sugarcane rows flourish best with 3.0 ft spacing. Choosing the correct track width eliminates root soil compaction and prevents crop damage.`
   },
@@ -718,7 +806,7 @@ const BLOG_POSTS = [
     date: "Jul 28, 2026",
     readTime: "5 min read",
     author: "Ashok Argade (CEO)",
-    image: "images/smart-autonomy-tech.jpg",
+    image: "images/smart-autonomy-tech.webp",
     excerpt: "Exploring our phased path to auto-steer, row following, and daytime/nighttime autonomous tillage at MIDC Paithan.",
     content: `Autonomy in agriculture is not science fiction—it is the answer to seasonal farm labor shortages and precision resource optimization. Every Robotrac tractor leaves our Paithan factory with integrated compute harnesses and sensor pods.`
   }
@@ -733,7 +821,7 @@ const TESTIMONIALS = [
     tractor: "Robotrac RT 180 Owner",
     rating: 5,
     quote: "The 3.0 ft track width on my RT 180 tractor enters sugarcane rows easily without crushing new shoots. We saved over ₹45,000 on spraying and inter-tillage labor in just one season!",
-    image: "images/farmer-testimonial.jpg"
+    image: "images/farmer-testimonial.webp"
   },
   {
     name: "Balasaheb Jadhav",
@@ -742,7 +830,7 @@ const TESTIMONIALS = [
     tractor: "Robotrac RT 120 Owner",
     rating: 5,
     quote: "Finding a 2.5 ft tractor under ₹5 Lakh was impossible until Robotrac launched. Paithan factory team delivered within 2 weeks, and the rotary tiller gives a powder-like seedbed for onion seedlings.",
-    image: "images/farmer-testimonial.jpg"
+    image: "images/farmer-testimonial.webp"
   },
   {
     name: "Dr. Sandeep Deshmukh",
@@ -751,6 +839,6 @@ const TESTIMONIALS = [
     tractor: "Robotrac RT 270 + Loader Fleet",
     rating: 5,
     quote: "We operate commercial hiring for local farmers. The RT 270 has logged 900+ hours with zero downtime. The heavy hydraulic lift easily handles 3-bottom ploughs and tipping trailers.",
-    image: "images/farmer-testimonial.jpg"
+    image: "images/farmer-testimonial.webp"
   }
 ];

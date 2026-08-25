@@ -109,7 +109,7 @@
           <div class="floating-tech-badge">
             <i class="fa-solid fa-satellite-dish"></i> Autonomy Level 2 Prepared
           </div>
-          <img src="images/tractor-rt180.jpg" alt="Robotrac RT 180 Tractor" class="hero-card-img">
+          <img src="images/tractor-rt180.webp" alt="Robotrac RT 180 Tractor" class="hero-card-img">
           <div class="hero-card-meta">
             <div>
               <h4>Robotrac RT 180</h4>
@@ -169,7 +169,7 @@
         <a href="shop.html?category=tractors" class="category-round-card">
           <div class="cat-icon-circle"><i class="fa-solid fa-tractor"></i></div>
           <h5>Compact Tractors</h5>
-          <span>3 Models + EV</span>
+          <span>6 Models (Diesel, EV & AI)</span>
         </a>
         <a href="shop.html?category=soil-prep" class="category-round-card">
           <div class="cat-icon-circle"><i class="fa-solid fa-mound"></i></div>
@@ -211,21 +211,23 @@
 
       <!-- Tab Buttons -->
       <div class="category-filter-pills">
-        <button class="cat-tab-btn active" data-category="all" data-target="#featuredTractorsGrid">All Models</button>
+        <button class="cat-tab-btn active" data-category="all" data-target="#featuredTractorsGrid">All Models (6)</button>
         <button class="cat-tab-btn" data-category="rt-120" data-target="#featuredTractorsGrid">Small Farms (RT 120)</button>
+        <button class="cat-tab-btn" data-category="rt-160" data-target="#featuredTractorsGrid">Orchards (RT 160)</button>
         <button class="cat-tab-btn" data-category="rt-180" data-target="#featuredTractorsGrid">Medium Farms (RT 180)</button>
         <button class="cat-tab-btn" data-category="rt-270" data-target="#featuredTractorsGrid">Large Holdings (RT 270)</button>
         <button class="cat-tab-btn" data-category="rt-270-ev" data-target="#featuredTractorsGrid">Electric Concept (RT 270 EV)</button>
+        <button class="cat-tab-btn" data-category="rt-autonomous" data-target="#featuredTractorsGrid">Driverless AI (RT Auto)</button>
       </div>
 
-      <!-- Grid Cards -->
+      <!-- Grid Cards (6 Products) -->
       <div class="products-grid" id="featuredTractorsGrid">
-        <!-- RT 120 -->
+        <!-- 1. RT 120 -->
         <div class="product-grid-item" data-category="rt-120" data-type="tractor">
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge">Small Holdings</span>
-              <img src="images/tractor-rt120.jpg" alt="Robotrac RT 120" class="product-img">
+              <img src="images/tractor-rt120.webp" alt="Robotrac RT 120" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="rt-120" title="Quick View"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="rt-120" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -257,12 +259,49 @@
           </div>
         </div>
 
-        <!-- RT 180 -->
+        <!-- 2. RT 160 -->
+        <div class="product-grid-item" data-category="rt-160" data-type="tractor">
+          <div class="product-card">
+            <div class="product-thumb-box">
+              <span class="product-badge badge-green">New Launch</span>
+              <img src="images/tractor-rt160.webp" alt="Robotrac RT 160" class="product-img">
+              <div class="product-quick-actions">
+                <button class="action-btn" data-quick-view="rt-160" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+                <button class="action-btn" data-add-wishlist="rt-160" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <a href="compare.html?add=rt-160" class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span class="product-cat">ORCHARD TRACTOR</span>
+                <div class="product-stars"><i class="fa-solid fa-star"></i> <span>4.85 (29)</span></div>
+              </div>
+              <h4 class="product-title"><a href="product-details.html?id=rt-160">Robotrac RT 160</a></h4>
+              <div class="product-specs-pills">
+                <span class="spec-pill"><i class="fa-solid fa-gauge-high"></i> 32 HP</span>
+                <span class="spec-pill"><i class="fa-solid fa-arrows-left-right"></i> 2.8 ft Track</span>
+                <span class="spec-pill"><i class="fa-solid fa-weight-hanging"></i> 950 kg Lift</span>
+              </div>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:16px;">
+                Intermediate power with dual camera masts for high-density orchards and inter-row cultivation.
+              </p>
+              <div class="product-footer-row">
+                <div class="product-price-wrap">
+                  <span class="price-lbl">Ex-Showroom Target</span>
+                  <span class="price-val">₹ 5.85 Lakh</span>
+                </div>
+                <button class="btn btn-sm btn-primary" data-add-cart="rt-160"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. RT 180 -->
         <div class="product-grid-item" data-category="rt-180" data-type="tractor">
           <div class="product-card" style="border: 2px solid var(--accent-amber);">
             <div class="product-thumb-box">
               <span class="product-badge badge-primary">Most Popular</span>
-              <img src="images/tractor-rt180.jpg" alt="Robotrac RT 180" class="product-img">
+              <img src="images/tractor-rt180.webp" alt="Robotrac RT 180" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="rt-180" title="Quick View"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="rt-180" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -294,12 +333,12 @@
           </div>
         </div>
 
-        <!-- RT 270 -->
+        <!-- 4. RT 270 -->
         <div class="product-grid-item" data-category="rt-270" data-type="tractor">
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge">Heavy Duty</span>
-              <img src="images/tractor-rt270.jpg" alt="Robotrac RT 270" class="product-img">
+              <img src="images/tractor-rt270.webp" alt="Robotrac RT 270" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="rt-270" title="Quick View"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="rt-270" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -330,6 +369,80 @@
             </div>
           </div>
         </div>
+
+        <!-- 5. RT 270 EV -->
+        <div class="product-grid-item" data-category="rt-270-ev" data-type="tractor">
+          <div class="product-card">
+            <div class="product-thumb-box">
+              <span class="product-badge badge-green">EV Innovation</span>
+              <img src="images/rt270ev.webp" alt="Robotrac RT 270 EV" class="product-img">
+              <div class="product-quick-actions">
+                <button class="action-btn" data-quick-view="rt-270-ev" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+                <button class="action-btn" data-add-wishlist="rt-270-ev" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <a href="compare.html?add=rt-270-ev" class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span class="product-cat">ELECTRIC TRACTOR</span>
+                <div class="product-stars"><i class="fa-solid fa-star"></i> <span>4.9 (19)</span></div>
+              </div>
+              <h4 class="product-title"><a href="product-details.html?id=rt-270-ev">Robotrac RT 270 EV</a></h4>
+              <div class="product-specs-pills">
+                <span class="spec-pill"><i class="fa-solid fa-bolt"></i> 45 HP Eq.</span>
+                <span class="spec-pill"><i class="fa-solid fa-arrows-left-right"></i> 3.2 ft Track</span>
+                <span class="spec-pill"><i class="fa-solid fa-battery-full"></i> 42 kWh LFP</span>
+              </div>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:16px;">
+                100% electric platform with modular swap battery, ₹35/hr running cost, and zero emissions.
+              </p>
+              <div class="product-footer-row">
+                <div class="product-price-wrap">
+                  <span class="price-lbl">Ex-Showroom Target</span>
+                  <span class="price-val">₹ 14.50 Lakh</span>
+                </div>
+                <button class="btn btn-sm btn-primary" data-add-cart="rt-270-ev"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. RT Autonomous -->
+        <div class="product-grid-item" data-category="rt-autonomous" data-type="tractor">
+          <div class="product-card" style="border: 2px solid var(--primary-forest);">
+            <div class="product-thumb-box">
+              <span class="product-badge badge-primary">Autonomous AI</span>
+              <img src="images/smart-autonomy-tech.webp" alt="Robotrac RT Autonomous" class="product-img">
+              <div class="product-quick-actions">
+                <button class="action-btn" data-quick-view="rt-autonomous" title="Quick View"><i class="fa-solid fa-eye"></i></button>
+                <button class="action-btn" data-add-wishlist="rt-autonomous" title="Wishlist"><i class="fa-regular fa-heart"></i></button>
+                <a href="compare.html?add=rt-autonomous" class="action-btn" title="Compare"><i class="fa-solid fa-code-compare"></i></a>
+              </div>
+            </div>
+            <div class="product-body">
+              <div class="product-category-row">
+                <span class="product-cat">AUTONOMOUS ROBOTICS</span>
+                <div class="product-stars"><i class="fa-solid fa-star"></i> <span>5.0 (16)</span></div>
+              </div>
+              <h4 class="product-title"><a href="product-details.html?id=rt-autonomous">Robotrac RT Autonomous</a></h4>
+              <div class="product-specs-pills">
+                <span class="spec-pill"><i class="fa-solid fa-satellite-dish"></i> Level 4 AI</span>
+                <span class="spec-pill"><i class="fa-solid fa-arrows-left-right"></i> 3.0 ft Track</span>
+                <span class="spec-pill"><i class="fa-solid fa-gauge-high"></i> 50 HP Class</span>
+              </div>
+              <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:16px;">
+                Driverless platform with 360° LiDAR, dual RTK sub-inch guidance, and 24/7 day-night field operation.
+              </p>
+              <div class="product-footer-row">
+                <div class="product-price-wrap">
+                  <span class="price-lbl">Ex-Showroom Target</span>
+                  <span class="price-val">₹ 12.80 Lakh</span>
+                </div>
+                <button class="btn btn-sm btn-primary" data-add-cart="rt-autonomous"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -356,7 +469,7 @@
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge badge-primary">Top Seller</span>
-              <img src="images/rotary-tiller.jpg" alt="Rotary Tiller" class="product-img">
+              <img src="images/rotary-tiller.webp" alt="Rotary Tiller" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="rotary-tiller"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="rotary-tiller"><i class="fa-regular fa-heart"></i></button>
@@ -379,7 +492,7 @@
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge">Essential</span>
-              <img src="images/plough.jpg" alt="MB Plough" class="product-img">
+              <img src="images/plough.webp" alt="MB Plough" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="plough"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="plough"><i class="fa-regular fa-heart"></i></button>
@@ -402,7 +515,7 @@
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge badge-green">High Yield</span>
-              <img src="images/reaper.jpg" alt="Multi-Crop Reaper" class="product-img">
+              <img src="images/reaper.webp" alt="Multi-Crop Reaper" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="reaper"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="reaper"><i class="fa-regular fa-heart"></i></button>
@@ -425,7 +538,7 @@
           <div class="product-card">
             <div class="product-thumb-box">
               <span class="product-badge">Crop Protection</span>
-              <img src="images/sprayer.jpg" alt="Boom Sprayer" class="product-img">
+              <img src="images/sprayer.webp" alt="Boom Sprayer" class="product-img">
               <div class="product-quick-actions">
                 <button class="action-btn" data-quick-view="sprayer"><i class="fa-solid fa-eye"></i></button>
                 <button class="action-btn" data-add-wishlist="sprayer"><i class="fa-regular fa-heart"></i></button>
@@ -456,7 +569,7 @@
   <section class="section-padding tech-autonomy-section" id="technology">
     <div class="container tech-grid">
       <div class="tech-media-box">
-        <img src="images/smart-autonomy-tech.jpg" alt="Autonomous Agriculture Technology" class="tech-media-img">
+        <img src="images/smart-autonomy-tech.webp" alt="Autonomous Agriculture Technology" class="tech-media-img">
       </div>
       <div class="tech-content-col">
         <span class="eyebrow-tag gold"><i class="fa-solid fa-satellite"></i> Future-Proof Architecture</span>
@@ -521,7 +634,7 @@
           </a>
         </div>
         <div class="factory-img-frame">
-          <img src="images/factory-paithan.jpg" alt="Paithan Manufacturing Plant">
+          <img src="images/factory-paithan.webp" alt="Paithan Manufacturing Plant">
           <div class="factory-badge-over">
             <strong>Robotrac Tractor India Pvt Ltd</strong>
             <span>A109-110 MIDC Paithan, Chhatrapati Sambhajinagar</span>
@@ -545,7 +658,7 @@
           <!-- Slide 1 -->
           <div class="testimonial-card-slide">
             <div class="testimonial-card-inner">
-              <img src="images/farmer-testimonial.jpg" alt="Rameshwar Patil" class="t-farmer-thumb">
+              <img src="images/farmer-testimonial.webp" alt="Rameshwar Patil" class="t-farmer-thumb">
               <div class="t-farmer-content">
                 <div class="t-quote-mark"><i class="fa-solid fa-quote-left"></i></div>
                 <div class="stars-gold" style="margin-bottom:12px;">
@@ -585,7 +698,7 @@
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-badge">Govt Subsidies</span>
-            <img src="images/farmer-testimonial.jpg" alt="Subsidies Guide" class="blog-thumb">
+            <img src="images/farmer-testimonial.webp" alt="Subsidies Guide" class="blog-thumb">
           </div>
           <div class="blog-content">
             <div class="blog-meta-row">
@@ -605,7 +718,7 @@
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-badge">Machinery Guide</span>
-            <img src="images/tractor-rt180.jpg" alt="Track Width Selection" class="blog-thumb">
+            <img src="images/tractor-rt180.webp" alt="Track Width Selection" class="blog-thumb">
           </div>
           <div class="blog-content">
             <div class="blog-meta-row">
@@ -625,7 +738,7 @@
         <div class="blog-card">
           <div class="blog-thumb-wrap">
             <span class="blog-category-badge">Smart Farming</span>
-            <img src="images/smart-autonomy-tech.jpg" alt="Autonomy Future" class="blog-thumb">
+            <img src="images/smart-autonomy-tech.webp" alt="Autonomy Future" class="blog-thumb">
           </div>
           <div class="blog-content">
             <div class="blog-meta-row">
@@ -682,9 +795,11 @@
         <h4 class="footer-widget-title">RT Series Models</h4>
         <ul class="footer-links-list">
           <li><a href="product-details.html?id=rt-120"><i class="fa-solid fa-chevron-right"></i> RT 120 (2.5 ft Track)</a></li>
+          <li><a href="product-details.html?id=rt-160"><i class="fa-solid fa-chevron-right"></i> RT 160 (2.8 ft Track)</a></li>
           <li><a href="product-details.html?id=rt-180"><i class="fa-solid fa-chevron-right"></i> RT 180 (3.0 ft Track)</a></li>
           <li><a href="product-details.html?id=rt-270"><i class="fa-solid fa-chevron-right"></i> RT 270 (3.5 ft Track)</a></li>
           <li><a href="product-details.html?id=rt-270-ev"><i class="fa-solid fa-chevron-right"></i> RT 270 EV Electric Concept</a></li>
+          <li><a href="product-details.html?id=rt-autonomous"><i class="fa-solid fa-chevron-right"></i> RT Autonomous Driverless AI</a></li>
           <li><a href="compare.html"><i class="fa-solid fa-chevron-right"></i> Side-by-Side Model Comparison</a></li>
         </ul>
       </div>

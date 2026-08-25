@@ -5,10 +5,12 @@
 class TractorCustomizer {
   constructor() {
     this.models = {
-      "rt-120": { name: "Robotrac RT 120", basePrice: 492000, hp: "25 HP", defaultTrack: "2.5 ft", image: "images/tractor-rt120.jpg" },
-      "rt-180": { name: "Robotrac RT 180", basePrice: 670000, hp: "38 HP", defaultTrack: "3.0 ft", image: "images/tractor-rt180.jpg" },
-      "rt-270": { name: "Robotrac RT 270", basePrice: 925000, hp: "52 HP", defaultTrack: "3.5 ft", image: "images/tractor-rt270.jpg" },
-      "rt-270-ev": { name: "Robotrac RT 270 EV", basePrice: 1450000, hp: "45 HP Eq.", defaultTrack: "3.2 ft", image: "images/rt270ev.jpg" }
+      "rt-120": { name: "Robotrac RT 120", basePrice: 492000, hp: "25 HP", defaultTrack: "2.5 ft", image: "images/tractor-rt120.webp" },
+      "rt-160": { name: "Robotrac RT 160", basePrice: 585000, hp: "32 HP", defaultTrack: "2.8 ft", image: "images/tractor-rt160.webp" },
+      "rt-180": { name: "Robotrac RT 180", basePrice: 670000, hp: "38 HP", defaultTrack: "3.0 ft", image: "images/tractor-rt180.webp" },
+      "rt-270": { name: "Robotrac RT 270", basePrice: 925000, hp: "52 HP", defaultTrack: "3.5 ft", image: "images/tractor-rt270.webp" },
+      "rt-270-ev": { name: "Robotrac RT 270 EV", basePrice: 1450000, hp: "45 HP Eq.", defaultTrack: "3.2 ft", image: "images/rt270ev.webp" },
+      "rt-autonomous": { name: "Robotrac RT Autonomous", basePrice: 1280000, hp: "50 HP AI", defaultTrack: "3.0 ft", image: "images/smart-autonomy-tech.webp" }
     };
 
     this.selectedModel = "rt-180";
