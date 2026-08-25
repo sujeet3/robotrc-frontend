@@ -175,8 +175,8 @@
   }
 
   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
     text-align: center;
   }
 
@@ -194,44 +194,49 @@
   }
 
   .trust-badges-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   .category-cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
   }
 
   .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 
   .products-grid-4 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
   }
 
   .customizer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
   }
 
   .tech-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 32px;
   }
 
   .testimonial-card-inner {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
     gap: 24px;
   }
 
   .t-farmer-thumb {
     height: 220px;
-    max-width: 320px;
+    max-width: 300px;
     margin: 0 auto;
   }
 
   .newsletter-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
   }
 
@@ -241,12 +246,12 @@
   }
 
   .footer-top-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 36px;
   }
 
   .shop-layout-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .shop-sidebar {
@@ -254,7 +259,7 @@
   }
 
   .product-detail-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .detail-gallery-wrap {
@@ -262,30 +267,50 @@
   }
 
   .checkout-layout-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .contact-layout-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .factory-showcase-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
   }
 
   .service-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .blog-grid-3 {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
   }
 }
 
 /* --- MOBILE DEVICES (max-width: 768px) --- */
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
   body {
     padding-bottom: 68px; /* Spacing for bottom bar */
+  }
+
+  .container,
+  .container-fluid,
+  .top-ticker .container,
+  .header-topbar .container,
+  .site-header .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
   }
 
   .mobile-bottom-bar {
@@ -293,30 +318,64 @@
   }
 
   .header-topbar {
-    display: none; /* Hide topbar on small screens to save vertical space */
+    display: none !important; /* Hide topbar on small screens to save vertical space */
   }
 
+  /* Top Ticker Mobile Fix */
   .top-ticker {
-    padding: 8px 0;
+    padding: 6px 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
   }
 
   .top-ticker-inner {
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
     text-align: center;
-    font-size: 0.82rem;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .ticker-highlight {
+    white-space: normal !important;
+    font-size: 0.76rem;
+    line-height: 1.35;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    word-break: break-word;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .ticker-badge {
+    margin: 0 auto;
+    font-size: 0.68rem;
+    padding: 2px 6px;
   }
 
   .ticker-links {
-    display: none;
+    display: none !important;
+  }
+
+  /* Header & Navigation */
+  .site-header {
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
   }
 
   .nav-container {
-    height: 64px;
+    height: 60px;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
   }
 
   .brand-logo {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   .brand-logo .logo-leaf-icon {
@@ -326,188 +385,452 @@
   }
 
   .nav-actions {
-    gap: 8px;
+    gap: 6px;
   }
 
   .nav-icon-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.05rem;
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
   }
 
+  /* Hero Section */
   .hero-section {
-    padding: 40px 0 50px 0;
+    padding: 36px 0 45px 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .hero-badge-pill {
+    font-size: 0.75rem;
+    padding: 6px 14px;
+    margin-bottom: 16px;
+  }
+
+  .hero-title {
+    font-size: 1.95rem;
+    line-height: 1.22;
+    margin-bottom: 14px;
+    word-break: break-word;
+  }
+
+  .hero-desc {
+    font-size: 0.96rem;
+    margin-bottom: 24px;
   }
 
   .hero-stats-row {
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
+    justify-content: space-between;
   }
 
-  .hero-stat-card {
-    flex: 1 1 120px;
-    padding: 14px 16px;
+  .hero-stat-card,
+  .hero-stat-item {
+    flex: 1 1 90px;
+    min-width: 0;
+    padding: 10px 12px;
+  }
+
+  .hero-stat-item h3 {
+    font-size: 1.4rem;
+  }
+
+  .hero-card-featured {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .floating-tech-badge {
+    position: static;
+    display: inline-flex;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    animation: none;
+  }
+
+  /* Trust Badges */
+  .trust-badges-bar {
+    padding: 24px 0;
   }
 
   .trust-badges-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 14px;
   }
 
+  /* Category Round Cards */
   .category-cards-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 36px;
   }
 
   .category-round-card {
-    padding: 18px 12px;
+    padding: 14px 10px;
   }
 
   .category-round-icon {
-    width: 60px;
-    height: 60px;
-    font-size: 1.5rem;
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
   }
 
+  .category-round-card h5 {
+    font-size: 0.92rem;
+  }
+
+  /* Horizontal Swipe Category Filter Pills on Mobile */
+  .category-filter-pills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+    margin-bottom: 24px;
+    width: 100%;
+    scrollbar-width: none;
+  }
+
+  .category-filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .cat-tab-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.82rem;
+    padding: 8px 16px;
+  }
+
+  /* Products Showcase (All 6 displayed cleanly in 1 column on mobile) */
   .products-grid,
   .products-grid-4 {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr) !important;
     gap: 20px;
+    width: 100%;
+    min-width: 0;
   }
 
-  .model-select-grid,
-  .track-pills,
-  .implements-checkbox-grid {
-    grid-template-columns: 1fr;
+  .product-grid-item {
+    width: 100%;
+    min-width: 0;
   }
 
+  .product-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-title {
+    font-size: 1.12rem;
+  }
+
+  /* Customizer & Live EMI Studio Mobile Layout */
   .customizer-card {
-    padding: 20px 16px;
+    padding: 18px 14px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
   }
 
-  .customizer-layout-grid {
-    grid-template-columns: 1fr;
+  .customizer-header h3 {
+    font-size: 1.45rem;
+  }
+
+  .customizer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .customizer-options-col,
+  .customizer-summary-col {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .model-select-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px;
+  }
+
+  .model-option-card {
+    width: 100%;
+    min-width: 0;
+    padding: 12px 14px;
+  }
+
+  .track-pills {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 8px;
+  }
+
+  .track-pill {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .implements-checkbox-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    max-height: 260px;
+  }
+
+  .implement-check-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .customizer-preview-box {
+    padding: 16px 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .preview-thumb-wrap {
+    height: 180px;
+  }
+
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.84rem;
+  }
+
+  .cost-row span {
+    flex: 1 1 auto;
+    min-width: 0;
+    word-break: break-word;
+  }
+
+  .cost-row strong,
+  .cost-row .subsidy-amount {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: 0.92rem;
+  }
+
+  .emi-result-card {
+    padding: 14px 12px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .emi-result-amount {
+    font-size: 1.65rem;
   }
 
   .action-btn-row {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
   }
 
   .action-btn-row .btn {
     width: 100%;
   }
 
-  .service-cards-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  /* Autonomy & Tech Showcase */
+  .tech-autonomy-section {
+    padding: 45px 0;
   }
 
-  .blog-grid-3 {
-    grid-template-columns: 1fr;
+  .tech-grid {
+    grid-template-columns: minmax(0, 1fr);
     gap: 24px;
   }
 
-  .footer-top-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .tech-media-box {
+    width: 100%;
+    min-width: 0;
   }
 
-  .footer-bottom-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 10px;
+  .tech-media-img {
+    border-radius: var(--radius-lg);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
-  .qv-product-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .qv-main-img-wrap {
-    height: 220px;
-  }
-
-  .form-row-2 {
-    grid-template-columns: 1fr;
+  .tech-feature-list {
     gap: 14px;
   }
 
-  .detail-main-img-box {
-    height: 260px;
+  .tech-feature-card {
+    padding: 14px;
   }
 
-  .p-tabs-nav {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
+  /* Factory Section */
+  .factory-showcase-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
   }
 
-  .p-tab-btn {
-    white-space: nowrap;
-    padding: 10px 14px;
-    font-size: 0.88rem;
+  .factory-img-frame {
+    width: 100%;
+    min-width: 0;
   }
 
+  .factory-img-frame img {
+    border-radius: var(--radius-lg);
+    width: 100%;
+    height: auto;
+  }
+
+  .factory-badge-over {
+    position: static;
+    margin-top: 10px;
+    border-radius: var(--radius-md);
+  }
+
+  /* Testimonials */
+  .testimonials-section {
+    padding: 45px 0;
+    overflow: hidden;
+  }
+
+  .testimonials-slider-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .testimonial-card-slide {
+    padding: 0 4px;
+  }
+
+  .testimonial-card-inner {
+    padding: 20px 16px;
+    border-radius: var(--radius-lg);
+  }
+
+  .t-quote-text {
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  /* Subsidy & Newsletter Banner */
   .subsidy-newsletter-box {
-    padding: 28px 16px;
+    padding: 24px 14px;
+    border-radius: var(--radius-lg);
+    width: 100%;
+    min-width: 0;
   }
 
   .newsletter-form {
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+  }
+
+  .newsletter-form .form-control {
+    width: 100% !important;
+    min-width: 0;
   }
 
   .newsletter-form .btn {
     width: 100%;
   }
 
+  /* Blog & Service Grids */
+  .service-cards-grid,
+  .blog-grid-3 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-top-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .footer-bottom-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .qv-product-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .qv-main-img-wrap {
+    height: 200px;
+  }
+
+  .form-row-2 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .detail-main-img-box {
+    height: 220px;
+  }
+
+  .p-tabs-nav,
   .contact-tab-nav {
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
   }
 
+  .p-tabs-nav::-webkit-scrollbar,
+  .contact-tab-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .p-tab-btn,
   .c-tab-btn {
     white-space: nowrap;
-    padding: 10px 14px;
-    font-size: 0.85rem;
+    padding: 8px 12px;
+    font-size: 0.84rem;
   }
 
   .compare-matrix-wrap {
+    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-lg);
   }
 
   .compare-matrix-table th,
   .compare-matrix-table td {
-    padding: 12px 14px;
-    font-size: 0.88rem;
+    padding: 10px 12px;
+    font-size: 0.82rem;
   }
 
-  .checkout-box {
-    padding: 20px 16px;
-  }
-
+  .checkout-box,
   .rental-booking-form-box {
-    padding: 24px 16px;
+    padding: 18px 14px;
+    border-radius: var(--radius-lg);
   }
 }
 
 /* --- SMALL MOBILE (max-width: 480px) --- */
 @media (max-width: 480px) {
   .container {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
 
   .hero-title {
-    font-size: 1.85rem;
+    font-size: 1.7rem;
   }
 
   .hero-cta-group {
     flex-direction: column;
     width: 100%;
+    gap: 10px;
   }
 
   .hero-cta-group .btn {
@@ -515,9 +838,32 @@
   }
 
   .btn {
-    padding: 12px 18px;
-    font-size: 0.9rem;
+    padding: 11px 16px;
+    font-size: 0.88rem;
     min-height: 44px; /* Accessible Touch Target */
+  }
+
+  .category-cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .category-round-card {
+    padding: 12px 6px;
+  }
+
+  .category-round-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 1.15rem;
+  }
+
+  .category-round-card h5 {
+    font-size: 0.82rem;
+  }
+
+  .category-round-card span {
+    font-size: 0.68rem;
   }
 
   .cart-drawer {
@@ -526,10 +872,10 @@
   }
 
   .page-hero-title {
-    font-size: 1.7rem;
+    font-size: 1.55rem;
   }
 
   .section-padding {
-    padding: 45px 0;
+    padding: 36px 0;
   }
 }

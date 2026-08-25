@@ -70,6 +70,31 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 61, 43, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-forest);
 }
 
 /* --- CUSTOM INTERACTIVE CURSOR --- */
@@ -259,8 +284,11 @@ body {
   background-color: var(--bg-cream);
   line-height: 1.65;
   overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
   position: relative;
   -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
 }
 
 body.no-scroll,

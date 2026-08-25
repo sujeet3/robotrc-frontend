@@ -78,7 +78,7 @@ function initNavbar() {
     } else {
       navbar && navbar.classList.remove("scrolled");
     }
-  });
+  }, { passive: true });
 
   const openMenu = () => {
     mobileMenu && mobileMenu.classList.add("active");
@@ -393,7 +393,7 @@ function initBackToTop() {
     } else {
       btn.classList.remove("visible");
     }
-  });
+  }, { passive: true });
 
   btn.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
